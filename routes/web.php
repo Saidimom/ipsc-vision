@@ -19,13 +19,11 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'], function (){
     Route::get('profile', 'UsersController@profile')->name('profile');
     Route::get('permissions','UsersController@permissions')->name('permissions');
 
-
     Route::post('permissions', 'UsersController@updatePermissions')->name('admin.updatePermissions');
 
     Route::group(['prefix' => 'settings', 'middleware' => ['role:super-admin']], function () {
         Route::get('/', 'SettingsController@index')->name('settings.index');
     });
-
     //Route::get('test','UsersController@permissions')->name('test');
 });
 
