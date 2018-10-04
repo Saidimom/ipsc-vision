@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			IPSC&bull;VISION | Инциденты
+		</title>
+		<meta name="description" content="Latest updates and statistic charts">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+		<link href="assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/base/style.bundle.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<link rel="shortcut icon" href="assets/media/img/logo/favicon.ico" />
+	</head>
+	<body  class="m-content--skin- m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-light m-aside--offcanvas-default"  >
+		<!-- begin:: Page -->
+		<div class="m-grid m-grid--hor m-grid--root m-page">
+			<!-- BEGIN: Header -->
+			<header id="m_header" class="m-grid__item    m-header "  m-minimize-offset="200" m-minimize-mobile-offset="200" >
+				<div class="m-container m-container--fluid m-container--full-height">
+					<div class="m-stack m-stack--ver m-stack--desktop">
+						<!-- BEGIN: Brand -->
+						<div class="m-stack__item m-brand  m-brand--skin-light ">
+							<div class="m-stack m-stack--ver m-stack--general m-stack--fluid">
+								<div class="m-stack__item m-stack__item--middle m-brand__logo">
+									<a href="index.html" class="m-brand__logo-wrapper">
+										<img alt="" src="assets/media/img/logo.svg"/>
+									</a>
+								</div>
+								<div class="m-stack__item m-stack__item--middle m-brand__tools">
+									<div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-left m-dropdown--align-push" m-dropdown-toggle="click" aria-expanded="true">
+										<a href="#" class="dropdown-toggle m-dropdown__toggle btn btn-outline-metal m-btn  m-btn--icon m-btn--pill">
+											<span>
+												Инциденты
+											</span>
+										</a>
+										<div class="m-dropdown__wrapper">
+											<span class="m-dropdown__arrow m-dropdown__arrow--left m-dropdown__arrow--adjust"></span>
+											<div class="m-dropdown__inner">
+												<div class="m-dropdown__body">
+													<div class="m-dropdown__content">
+														<ul class="m-nav">
+															<li class="m-nav__section m-nav__section--first m--hide">
+																<span class="m-nav__section-text">
+																	Меню
+																</span>
+															</li>
+															<li class="m-nav__item">
+																<a href="index.html" class="m-nav__link">
+																	<i class="m-nav__link-icon flaticon-share"></i>
+																	<span class="m-nav__link-text">
+																		Консоль управления
+																	</span>
+																</a>
+															</li>
+															<li class="m-nav__item">
+																<a href="" class="m-nav__link">
+																	<i class="m-nav__link-icon flaticon-chat-1"></i>
+																	<span class="m-nav__link-text">
+																		Состояние инцидентов
+																	</span>
+																</a>
+															</li>
+
+				
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+			<!-- BEGIN: Topbar Toggler -->
+									<a id="m_aside_header_topbar_mobile_toggle" href="javascript:;" class="m-brand__icon m--visible-tablet-and-mobile-inline-block">
+										<i class="flaticon-more"></i>
+									</a>
+									<!-- BEGIN: Topbar Toggler -->
+								</div>
+							</div>
+						</div>
+						<!-- END: Brand -->
+						<div class="m-stack__item m-stack__item--fluid m-header-head" id="m_header_nav">
+							<!-- BEGIN: Topbar -->
+							<div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general">
+								<div class="m-stack__item m-topbar__nav-wrapper">
+									<ul class="m-topbar__nav m-nav m-nav--inline">
+										<li class="
+	m-nav__item m-dropdown m-dropdown--large m-dropdown--arrow m-dropdown--align-center m-dropdown--mobile-full-width m-dropdown--skin-light	m-list-search m-list-search--skin-light" 
+	m-dropdown-toggle="click" id="m_quicksearch" m-quicksearch-mode="dropdown" m-dropdown-persistent="1">
+											<a href="#" class="m-nav__link m-dropdown__toggle">
+												<span class="m-nav__link-icon">
+													<span class="m-nav__link-icon-wrapper">
+														<i class="flaticon-search"></i>
+													</span>
+												</span>
+											</a>
+											<div class="m-dropdown__wrapper">
+												<span class="m-dropdown__arrow m-dropdown__arrow--center"></span>
+												<div class="m-dropdown__inner ">
+													<div class="m-dropdown__header">
+														<form  class="m-list-search__form">
+															<div class="m-list-search__form-wrapper">
+																<span class="m-list-search__form-input-wrapper">
+																	<input id="m_quicksearch_input" autocomplete="off" type="text" name="q" class="m-list-search__form-input" value="" placeholder="Поиск...">
+																</span>
+																<span class="m-list-search__form-icon-close" id="m_quicksearch_close">
+																	<i class="fa fa-times"></i>
+																</span>
+															</div>
+														</form>
+													</div>
+													<div class="m-dropdown__body">
+														<div class="m-dropdown__scrollable m-scrollable" data-scrollable="true" data-height="300" data-mobile-height="200">
+															<div class="m-dropdown__content"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										
+										<li class="m-nav__item m-topbar__quick-Редактировать m-dropdown m-dropdown--skin-light m-dropdown--large m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push m-dropdown--mobile-full-width m-dropdown--skin-light"  m-dropdown-toggle="click">
+											<a href="addform.html" class="m-nav__link">
+												<span class="m-nav__link-icon">
+													<span class="m-nav__link-icon-wrapper">
+														<i class="flaticon-add"></i>
+													</span>
+												</span>
+											</a>
+											
+										</li>
+										
+																				<li class="m-nav__item m-topbar__quick-Редактировать m-dropdown m-dropdown--skin-light m-dropdown--large m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push m-dropdown--mobile-full-width m-dropdown--skin-light"  m-dropdown-toggle="click">
+											<a href="#" class="m-nav__link m-dropdown__toggle">
+												<span class="m-nav__link-icon">
+													<span class="m-nav__link-icon-wrapper">
+														<i class="flaticon-edit-1"></i>
+													</span>
+												</span>
+											</a>
+											
+										</li>
+										<li class="m-nav__item m-topbar__notifications m-dropdown m-dropdown--large m-dropdown--arrow m-dropdown--align-center 	m-dropdown--mobile-full-width" m-dropdown-toggle="click" m-dropdown-persistent="1">
+											<a href="#" class="m-nav__link m-dropdown__toggle" id="m_topbar_notification_icon">
+												<span class="m-nav__link-icon">
+													<span class="m-nav__link-icon-wrapper">
+														<i class="flaticon-music-2"></i>
+													</span>
+													<span class="m-nav__link-badge m-badge m-badge--success">
+														3
+													</span>
+												</span>
+											</a>
+											
+										</li>
+										<li class="m-nav__item m-topbar__user-profile  m-dropdown m-dropdown--medium m-dropdown--arrow  m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light" m-dropdown-toggle="click">
+											<a href="#" class="m-nav__link m-dropdown__toggle">
+												<span class="m-topbar__userpic">
+													<img src="assets/app/media/img/users/user4.jpg" class="m--img-rounded m--marginless m--img-centered" alt=""/>
+												</span>
+												<span class="m-nav__link-icon m-topbar__usericon  m--hide">
+													<span class="m-nav__link-icon-wrapper">
+														<i class="flaticon-user-ok"></i>
+													</span>
+												</span>
+												<span class="m-topbar__username m--hide">
+													Nick
+												</span>
+											</a>
+											<div class="m-dropdown__wrapper">
+												<span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
+												<div class="m-dropdown__inner">
+													<div class="m-dropdown__header m--align-center">
+														<div class="m-card-user m-card-user--skin-light">
+															<div class="m-card-user__pic">
+																<img src="assets/app/media/img/users/user4.jpg" class="m--img-rounded m--marginless" alt=""/>
+															</div>
+															<div class="m-card-user__details">
+																<span class="m-card-user__name m--font-weight-500">
+																	Ulugbek Pulatov
+																</span>
+																<a href="" class="m-card-user__email m--font-weight-300 m-link">
+																	u.pulatov@infosec.uz
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="m-dropdown__body">
+														<div class="m-dropdown__content">
+															<ul class="m-nav m-nav--skin-light">
+																<li class="m-nav__section m--hide">
+																	<span class="m-nav__section-text">
+																		Section
+																	</span>
+																</li>
+																<li class="m-nav__item">
+																	<a href="profile.html" class="m-nav__link">
+																		<i class="m-nav__link-icon flaticon-profile-1"></i>
+																		<span class="m-nav__link-title">
+																			<span class="m-nav__link-wrap">
+																				<span class="m-nav__link-text">
+																					My Profile
+																				</span>
+																				<span class="m-nav__link-badge">
+																					<span class="m-badge m-badge--success">
+																						2
+																					</span>
+																				</span>
+																			</span>
+																		</span>
+																	</a>
+																</li>
+																
+																<li class="m-nav__separator m-nav__separator--fit"></li>
+																<li class="m-nav__item">
+																	<a href="snippets/pages/user/login-1.html" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
+																		Выход
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									
+									</ul>
+								</div>
+							</div>
+							<!-- END: Topbar -->
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- END: Header -->		
+		<!-- begin::Body -->
+			<div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body">
+				
+				<div class="m-grid__item m-grid__item--fluid m-wrapper">
+					<!-- BEGIN: Subheader -->
+					<div class="m-subheader ">
+						<div class="d-flex align-items-center">
+							<div class="mr-auto">
+								<h3 class="m-subheader__title ">
+									Список пользователей
+								</h3>
+							</div>
+							<div>
+								
+							</div>
+						</div>
+					</div>
+					<!-- END: Subheader -->
+												<div class="m-content">
+    
+    <div class="m-portlet m-portlet--mobile">
+     
+        <div class="m-portlet__body">
+            <!--begin: Search Form -->
+            <div class="m-form m-form--label-align-right m--margin-top-20 m--margin-bottom-30">
+                <div class="row align-items-center">
+                    
+                    <div class="col-xl-12 order-1 order-xl-2 m--align-right">
+                        <a href="#" class="btn btn-accent m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
+                            <span>
+																					<i class="fa fa-user-plus"></i>
+																					<span>
+																						ДОБАВИТЬ ПОЛЬЗОВАТЕЛЯ
+																					</span>
+                            </span>
+                        </a>
+                        <div class="m-separator m-separator--dashed d-xl-none"></div>
+                    </div>
+                </div>
+            </div>
+            <!--end: Search Form -->
+            <!--begin: Datatable -->
+            <div class="m_datatable m-datatable m-datatable--default m-datatable--loaded" id="local_data" style="position: static; zoom: 1;">
+                <table class="m-datatable__table" style="display: block; min-height: 300px; overflow-x: auto;">
+                    <thead class="m-datatable__head">
+                        <tr class="m-datatable__row">
+                            <th data-field="RecordID" class="m-datatable__cell--center m-datatable__cell m-datatable__cell--check"><span style="width: 50px;"><label class="m-checkbox m-checkbox--single m-checkbox--all m-checkbox--solid m-checkbox--brand"><input type="checkbox"><span></span></label>
+                                </span>
+                            </th>
+                            <th data-field="OrderID" class="m-datatable__cell m-datatable__cell--sort"><span style="width: 133px;">ID</span></th>
+                            <th data-field="Name" class="m-datatable__cell m-datatable__cell--sort"><span style="width: 133px;">Имя</span></th>
+                            <th data-field="SecondName" class="m-datatable__cell m-datatable__cell--sort"><span style="width: 100px;">Фамилия</span></th>
+                            <th data-field="E-mail" class="m-datatable__cell m-datatable__cell--sort"><span style="width: 133px;">E-mail</span></th>
+                            <th data-field="Position" class="m-datatable__cell m-datatable__cell--sort"><span style="width: 133px;">Должность</span></th>
+                            <th data-field="Type" class="m-datatable__cell m-datatable__cell--sort"><span style="width: 133px;">Статус</span></th>
+                            <th data-field="Action" class="m-datatable__cell m-datatable__cell--sort"><span style="width: 110px;">Редактировать</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="m-datatable__body" style="">
+                        <tr data-row="0" class="m-datatable__row" style="left: 0px;">
+                            <td class="m-datatable__cell--center m-datatable__cell m-datatable__cell--check" data-field="RecordID"><span style="width: 50px;"><label class="m-checkbox m-checkbox--single m-checkbox--solid m-checkbox--brand"><input type="checkbox" value="51"><span></span></label>
+                                </span>
+                            </td>
+                            <td data-field="OrderID" class="m-datatable__cell"><span style="width: 133px;">1</span></td>
+                            <td data-field="Name" class="m-datatable__cell"><span style="width: 133px;">Farrell and Sons</span></td>
+                            <td data-field="SecondName" class="m-datatable__cell"><span style="width: 100px;">GEL</span></td>
+                            <td data-field="E-mail" class="m-datatable__cell"><span style="width: 133px;">38 Melrose Way</span></td>
+                            <td data-field="Position" class="m-datatable__cell"><span style="width: 133px;">6/24/2016</span></td>
+                            <td data-field="Type" class="m-datatable__cell"><span style="width: 133px;"><span class="m-badge m-badge--primary m-badge--dot"></span>&nbsp;<span class="m--font-bold m--font-primary">Онлайн</span></span>
+                            </td>
+                            <td data-field="Action" class="m-datatable__cell"><span style="overflow: visible; position: relative; width: 110px;">				
+							<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="View ">                            <i class="la la-edit"></i>                        </a>					</span></td>
+                        </tr>
+                        <tr data-row="1" class="m-datatable__row m-datatable__row--even" style="left: 0px;">
+                            <td class="m-datatable__cell--center m-datatable__cell m-datatable__cell--check" data-field="RecordID"><span style="width: 50px;"><label class="m-checkbox m-checkbox--single m-checkbox--solid m-checkbox--brand"><input type="checkbox" value="1"><span></span></label>
+                                </span>
+                            </td>
+                            <td data-field="OrderID" class="m-datatable__cell"><span style="width: 133px;">2</span></td>
+                            <td data-field="Name" class="m-datatable__cell"><span style="width: 133px;">Sanford-Halvorson</span></td>
+                            <td data-field="SecondName" class="m-datatable__cell"><span style="width: 100px;">GTQ</span></td>
+                            <td data-field="E-mail" class="m-datatable__cell"><span style="width: 133px;">897 Magdeline Park</span></td>
+                            <td data-field="Position" class="m-datatable__cell"><span style="width: 133px;">5/21/2016</span></td>
+                            <td data-field="Type" class="m-datatable__cell"><span style="width: 133px;"><span class="m-badge m-badge--primary m-badge--dot"></span>&nbsp;<span class="m--font-bold m--font-primary">Онлайн</span></span>
+                            </td>
+                            <td data-field="Action" class="m-datatable__cell"><span style="overflow: visible; position: relative; width: 110px;">										
+							<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="View ">                            
+							<i class="la la-edit"></i>                        
+							</a>					
+							</span></td>
+                        </tr>
+                        <tr data-row="2" class="m-datatable__row" style="left: 0px;">
+                            <td class="m-datatable__cell--center m-datatable__cell m-datatable__cell--check" data-field="RecordID"><span style="width: 50px;"><label class="m-checkbox m-checkbox--single m-checkbox--solid m-checkbox--brand"><input type="checkbox" value="95"><span></span></label>
+                                </span>
+                            </td>
+                            <td data-field="OrderID" class="m-datatable__cell"><span style="width: 133px;">3</span></td>
+                            <td data-field="Name" class="m-datatable__cell"><span style="width: 133px;">Dibbert-Batz</span></td>
+                            <td data-field="SecondName" class="m-datatable__cell"><span style="width: 100px;">IDR</span></td>
+                            <td data-field="E-mail" class="m-datatable__cell"><span style="width: 133px;">53 Jackson Pass</span></td>
+                            <td data-field="Position" class="m-datatable__cell"><span style="width: 133px;">6/29/2016</span></td>
+                            <td data-field="Type" class="m-datatable__cell"><span style="width: 133px;"><span class="m-badge m-badge--danger m-badge--dot"></span>&nbsp;<span class="m--font-bold m--font-danger">Офлайн</span></span>
+                            </td>
+                            <td data-field="Action" class="m-datatable__cell"><span style="overflow: visible; position: relative; width: 110px;">
+							<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="View ">                            <i class="la la-edit"></i>                        </a>					</span></td>
+                        </tr>
+                        <tr data-row="3" class="m-datatable__row m-datatable__row--even" style="left: 0px;">
+                            <td class="m-datatable__cell--center m-datatable__cell m-datatable__cell--check" data-field="RecordID"><span style="width: 50px;"><label class="m-checkbox m-checkbox--single m-checkbox--solid m-checkbox--brand"><input type="checkbox" value="93"><span></span></label>
+                                </span>
+                            </td>
+                            <td data-field="OrderID" class="m-datatable__cell"><span style="width: 133px;">4</span></td>
+                            <td data-field="Name" class="m-datatable__cell"><span style="width: 133px;">Rogahn-McClure</span></td>
+                            <td data-field="SecondName" class="m-datatable__cell"><span style="width: 100px;">CLP</span></td>
+                            <td data-field="E-mail" class="m-datatable__cell"><span style="width: 133px;">9 Scoville Place</span></td>
+                            <td data-field="Position" class="m-datatable__cell"><span style="width: 133px;">4/15/2016</span></td>
+                            <td data-field="Type" class="m-datatable__cell"><span style="width: 133px;"><span class="m-badge m-badge--primary m-badge--dot"></span>&nbsp;<span class="m--font-bold m--font-primary">Онлайн</span></span>
+                            </td>
+                            <td data-field="Action" class="m-datatable__cell"><span style="overflow: visible; position: relative; width: 110px;">
+							<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="View ">                            <i class="la la-edit"></i>                        </a>					</span></td>
+                        </tr>
+
+
+
+
+               
+
+                    </tbody>
+                </table>
+                <div class="m-datatable__pager m-datatable--paging-loaded clearfix">
+                    <ul class="m-datatable__pager-nav">
+                        <li><a title="First" class="m-datatable__pager-link m-datatable__pager-link--first m-datatable__pager-link--disabled" data-page="1" disabled="disabled"><i class="la la-angle-double-left"></i></a></li>
+                        <li><a title="Previous" class="m-datatable__pager-link m-datatable__pager-link--prev m-datatable__pager-link--disabled" data-page="1" disabled="disabled"><i class="la la-angle-left"></i></a></li>
+                        <li style="display: none;"><a title="More pages" class="m-datatable__pager-link m-datatable__pager-link--more-prev" data-page="1"><i class="la la-ellipsis-h"></i></a></li>
+                        <li style="display: none;">
+                            <input type="text" class="m-pager-input form-control" title="Page number">
+                        </li>
+                        <li><a class="m-datatable__pager-link m-datatable__pager-link-number m-datatable__pager-link--active" data-page="1" title="1">1</a></li>
+                        <li><a class="m-datatable__pager-link m-datatable__pager-link-number" data-page="2" title="2">2</a></li>
+  
+                        <li><a title="More pages" class="m-datatable__pager-link m-datatable__pager-link--more-next" data-page="7"><i class="la la-ellipsis-h"></i></a></li>
+                        <li><a title="Next" class="m-datatable__pager-link m-datatable__pager-link--next" data-page="2"><i class="la la-angle-right"></i></a></li>
+                        <li><a title="Last" class="m-datatable__pager-link m-datatable__pager-link--last" data-page="10"><i class="la la-angle-double-right"></i></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <!--end: Datatable -->
+        </div>
+    </div>
+</div>
+												</div>
+											</div>
+											<!-- end:: Body -->
+
+										</div>
+										<!-- end:: Page -->
+    
+	    <!-- begin::Scroll Top -->
+										<div id="m_scroll_top" class="m-scroll-top">
+											<i class="la la-arrow-up"></i>
+										</div>
+										<!-- end::Scroll Top -->		  
+    	<!--begin::Base Scripts -->
+										<script src="assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+										<script src="assets/base/scripts.bundle.js" type="text/javascript"></script>
+										<script src="assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+										<script src="assets/app/js/dashboard.js" type="text/javascript"></script>
+										<!--end::Base Scripts -->   
+        <!--begin::Page Resources -->
+										<script src="assets/custom/crud/metronic-datatable/base/data-local.js" type="text/javascript"></script>
+										<!--end::Page Resources -->
+									</body>
+									<!-- end::Body -->
+								</html>
