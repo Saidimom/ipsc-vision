@@ -24,8 +24,6 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'], function (){
 
     Route::group(['prefix' => 'settings', 'middleware' => ['role:super-admin']], function () {
         Route::get('/', 'SettingsController@index')->name('settings.index');
-
-
     });
 
     //Route::get('test','UsersController@permissions')->name('test');
